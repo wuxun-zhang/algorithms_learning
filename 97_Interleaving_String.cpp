@@ -4,6 +4,11 @@
 using namespace std;
 
 //Given s1, s2, s3, find whether s3 is formed by the interleaving of s1 and s2. 
+// 采用DP思想，分为三种情况
+// 1. s1空，s2非空 -> 若dp[0][j-1]为true（s3中的前j-1个元素由s2交错而来），则dp[0][j]的值由s2与s3当前位字符是否相同确定
+// 2. s1非空，s2空 -> 同上
+// 3. s1、s2非空 -> 此时dp[i][j-1]由dp[i-1][j]&&s1[i - 1] == s3[i + j - 1] 或 dp[i][j - 1] && (s2[j - 1] == s3[i + j - 1]确定
+
 // 2-D dp
 bool isInterleave_v1(const string& s1, const string &s2, const string& s3)
 {
