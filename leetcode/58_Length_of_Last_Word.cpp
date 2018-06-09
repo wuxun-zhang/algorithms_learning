@@ -2,7 +2,7 @@
 #include<string>
 using namespace std;
 
-//(标准IO中的cin>>在读取数据时，均是以空格等空白字符为结束字符)
+//对于标准输入cin及其派生的文件ifstream和字符串istringstream，在使用cin>>在读取数据时，均是以空格等空白字符为结束字符
 
 // 返回字符串中最后一个单词的长度，没有则返回零
 
