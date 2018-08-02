@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<sstream>
 using namespace std;
 
 //对于标准输入cin及其派生的文件ifstream和字符串istringstream，在使用cin>>在读取数据时，均是以空格等空白字符为结束字符
