@@ -38,11 +38,11 @@ int lengthOfLastWord_v2(const string& s)
 	return cnt;
 }
 
-void main()
-{
-	string s;
-	while (getline(cin, s))
-	{
-		cout << lengthOfLastWord(s) << endl;
-	}
-}
+//void main()
+//{
+//	string s;
+//	while (getline(cin, s))
+//	{
+//		cout << lengthOfLastWord(s) << endl;
+//	}
+//}
