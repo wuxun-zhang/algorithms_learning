@@ -44,10 +44,10 @@ int myAtoi(string& str){
     return result & 0xffffffff;
 }
 
-int main(void){
-    std::string in;
-    while(cin>>in){
-        std::cout<<myAtoi(in)<<std::endl;
-    }
-    return 0;
-}
+//int main(void){
+//    std::string in;
+//    while(cin>>in){
+//        std::cout<<myAtoi(in)<<std::endl;
+//    }
+//    return 0;
+//}
