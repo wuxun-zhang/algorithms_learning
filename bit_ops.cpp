@@ -2,6 +2,8 @@
 #include<string>
 using namespace std;
 
+// test rebase, currently in branch-master
+
 class bitOps {
 public:
 	// #1. 获取int型的最大值
