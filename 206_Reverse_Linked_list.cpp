@@ -2,22 +2,7 @@
 using namespace std;
 
 
-// test rebase in master-branch
-
-
-// test rebase second time in master-branch
-
-
-// test rebase in branch-leetcode_intervie
-
-// test rebase second time in branch-leetcode_intervie
-
-// test rebase the second time in branch-leetcode_intervie
-
-
-
-
-// test rebase in branch-leetcode_interview
+// test rebase the second time in branch-leetcode_interview
 
 struct ListNode {
      int val;
