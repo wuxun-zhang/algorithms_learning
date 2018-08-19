@@ -1,0 +1,8 @@
+# Pro.1 
+## the maximum of length of substrings in a given string
+
+# Pro.2
+## the maximum of length of sub sequences in a given string
+
+# Pro.3
+## palindrome problem 
