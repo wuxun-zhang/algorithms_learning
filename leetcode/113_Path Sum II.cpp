@@ -20,10 +20,9 @@ private:
 	void dfs(TreeNode*root, vector<vector<int>>& paths, vector<int>& cur,int sum){
 		if(!root)
 			return;
-		if(!root->left && !root->right && sum == 0)
-			paths.push_back(cur);
-		
 		cur.push_back(root->val);
+		if(!root->left && !root->right && sum == root->val)
+			paths.push_back(cur);
 		dfs(root->left, paths, cur, sum-root->val);
 		dfs(root->right, paths, cur, sum - root->val);
 		cur.pop_back();
