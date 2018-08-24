@@ -74,7 +74,7 @@ public:
 			t += '#';
 		}
 		int p[t.size()] = {0}, id=0, mx=0, resId=0, resMx=0;
-		for(int i=0;i<t.size(); i++){
+		for(int i=0; i<t.size(); i++){
 			p[i] = mx>i?min(p[2*id-i], mx-i):1;
 			while(t[i+p[i]] == t[i-p[i]])
 				++p[i];
@@ -87,6 +87,8 @@ public:
 				resId=i;
 			}
 		}
+		// because we have changed the input string,
+		// so, we need to recover the original length by multilying with 1/2
 		return s.substr((resId-resMx)/2, resMx-1);		
 	}
 private:
