@@ -17,6 +17,7 @@ public:
 				output.push_back(s[c]);
 				// calculate the index
 				int tmp = c+stride-2*r;
+				// the first and last row eliminated 
 				if(r!=0 && r!=numRows-1 && tmp<len)
 					output.push_back(s[tmp]);
 			}
