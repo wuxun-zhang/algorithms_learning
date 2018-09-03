@@ -62,7 +62,7 @@ public:
 		int k = length1-length2;
 		ListNode* first = pHead1, *second = pHead2;
 		if(length1 < length2){
-			k = length2-length2;
+			k = length2-length1;
 			// swap nodes, make sure the first list has the greater length
 			first = pHead2;
 			second = pHead1;
