@@ -57,9 +57,9 @@ private:
 	using pp = pair<int, int>;
 };
 
-int main(void){
-	vector<int> a{2,5,0,0};
-	Solution sol;
-	cout<<(sol.canJump_v2(a)?"true":"false")<<endl;
-	return 0;
-}
+//int main(void){
+//	vector<int> a{2,5,0,0};
+//	Solution sol;
+//	cout<<(sol.canJump_v2(a)?"true":"false")<<endl;
+//	return 0;
+//}
