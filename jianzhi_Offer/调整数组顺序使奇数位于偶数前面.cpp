@@ -80,6 +80,7 @@ public:
 	}
 
 	// O(n^2)
+	// like bubble sort
 	void reOrderArray_right(vector<int>& array){
 		if(array.empty())
 			return;
@@ -91,7 +92,7 @@ public:
 		}
 	}
 private:
-	void mySwap(int &a, int &b){
+	static inline void mySwap(int &a, int &b){
 		a = a^b;
 		b = a^b;
 		a = a^b;
@@ -103,6 +104,7 @@ int main(void) {
 	cout << "before:" << endl;
 	for (auto item : a)
 		cout << item << " ";
+	
 	cout << endl;
 	Solution sol;
 	sol.reOrderArray(a);
