@@ -220,7 +220,33 @@ namespace MergeSort{
 class merge_sort{
 public:
 	void Run(vector<int>& nums){
-		
+		int n = nums.size();
+		__mergeSort(nums, 0, n-1);
+	}
+private:
+	void __mergeSort(vector<int>& nums, int start, int end){
+		if(end-start<=15){
+			insertionSortHelper(nums, start, end);
+			return;
+		}
+
+		if(start>=end)
+			return;
+
+		int mid = (start+end)/2;
+		__mergeSort(nums, start, mid);
+		__mergeSort(nums, mid+1, end);
+
+		if(nums[mid] > nums[mid+1])
+			merge(nums, start, mid, end);
+	}
+
+	void merge(vector<int>& nums, int start, int mid, int end){
+		vector<int> 
+	}
+
+	void insertionSortHelper(vector<int>& nums, int start, int end){
+
 	}
 };
 
