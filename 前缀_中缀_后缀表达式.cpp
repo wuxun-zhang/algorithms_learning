@@ -160,13 +160,13 @@ namespace Infix_to_Prefix{
 
 } // namespace Prefix_Infix_Suffix
 
-int main(void){
-	string infix;
-	cin>>infix;
-	cout<<"infix: "<<infix<<endl;
-	string suffix = Prefix_Infix_Suffix::Infix_to_Suffix::InfixToSuffix(infix);
-	cout<<"suffix: "<<suffix<<endl;
-	float result = Prefix_Infix_Suffix::Infix_to_Suffix::getResultUseSuffix(suffix);
-	cout<<"result = "<<result<<endl;
-	return 0;
-}
+//int main(void){
+//	string infix;
+//	cin>>infix;
+//	cout<<"infix: "<<infix<<endl;
+//	string suffix = Prefix_Infix_Suffix::Infix_to_Suffix::InfixToSuffix(infix);
+//	cout<<"suffix: "<<suffix<<endl;
+//	float result = Prefix_Infix_Suffix::Infix_to_Suffix::getResultUseSuffix(suffix);
+//	cout<<"result = "<<result<<endl;
+//	return 0;
+//}

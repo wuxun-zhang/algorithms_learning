@@ -241,12 +241,42 @@ private:
 			merge(nums, start, mid, end);
 	}
 
+	// merge two sorted array list
 	void merge(vector<int>& nums, int start, int mid, int end){
-		vector<int> 
+		vector<int> nums_copy(nums);
+		int lstart = start;
+		int rstart = mid+1;
+		int pos = start;
+		while(pos <= end){
+			if(lstart > mid){
+				nums[pos++] = nums_copy[rstart-start];
+				rstart++;
+			}else if(rstart>end){
+				nums[pos++] = nums_copy[lstart-start];
+				lstart++;
+			}else if(nums_copy[lstart-start]<nums_copy[rstart-start]){
+					nums[pos++] = nums_copy[lstart-start];
+					lstart++;
+			}else{
+				nums[pos++] = nums_copy[rstart-start];
+				rstart++;
+			}
+		}
+		return;
 	}
 
+	// insert sort
 	void insertionSortHelper(vector<int>& nums, int start, int end){
-
+		for(int i=start+1; i<=end; i++){
+			int curVal = nums[i];
+			int position = i;
+			// find the last element whose value is not less than curVal
+			while(curVal < nums[position-1] && position>start){
+				nums[position] = nums[position-1];
+				position--;
+			}
+			nums[position] = curVal;
+		}
 	}
 };
 
