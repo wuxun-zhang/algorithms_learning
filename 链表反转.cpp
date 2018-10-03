@@ -30,7 +30,7 @@ public:
 	// need two pointers: one is for current node
 	// another for the next node of the current
 	D_listNode* reverseDoubleList(D_listNode* head){
-		D_listNode* pcur=head, ppre=nullptr;
+		D_listNode* pcur=head, *ppre=nullptr;
 		while(pcur){
 			D_listNode* ptmp = pcur->next;
 			pcur->pre = ptmp;

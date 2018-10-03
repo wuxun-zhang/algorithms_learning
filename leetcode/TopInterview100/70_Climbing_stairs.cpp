@@ -40,7 +40,7 @@ public:
 	// [f(n);f(n-1)] = ([1,1;1,0])^(n-1) * [f(1);f(0)] 
 	// 				 = ([1,1;1,0])^(n-2) * [f(2);f(1)]
 	unsigned int _02_climbStairs(unsigned int n){
-		if(n<4)
+		if(n<2)
 			return n;
 		vector<vector<int>> factors = {{1,1}, {1,0}};
 		vector<vector<int>> res = {{1,0}, {0,1}};
@@ -70,3 +70,13 @@ private:
 		return res;
 	}
 };
+
+//int main(int argc, char const *argv[])
+//{
+//	int n;
+//	Solution sol;
+//	while(cin>>n){
+//		cout<<sol._02_climbStairs(n)<<endl;
+//	}
+//	return 0;
+//}
