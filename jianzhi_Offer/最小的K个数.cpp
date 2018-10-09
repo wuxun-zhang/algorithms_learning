@@ -5,8 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-	// 快速排序的思想
-	// 使用Partition函数，时间复杂度为nlog2(k)
+	// the least K numbers must be in the left part of the quick-sorted array 
 	vector<int> GetLeastKNumbers_v1(vector<int>& num, int k) {
 		if (num.empty())
 			return vector<int>{};
@@ -115,7 +114,7 @@ private:
 };
 
 //int main(void) {
-//	vector<int> in{9,8,7,0,6,4,8};
+//	vector<int> in{ 4,5,1,6,2,7,3,8 };
 //	Solution sol;
 //	for (auto& item : in)
 //		cout << item << " ";
