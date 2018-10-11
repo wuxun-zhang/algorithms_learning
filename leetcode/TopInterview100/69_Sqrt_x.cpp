@@ -38,13 +38,13 @@ public:
 		return static_cast<int>(left);
     }
 
-    // Newton's method
+    // Newton's iteration method
     // f(x) = x^2-n --> f'(x)=0 -->
     // x2 = (x1+n/x1)/2
-    int _01_mySqrt_x(int x){
-    	int64_t res=x;
-    	while(res*res > x){
-    		res = (res + x/res) / 2;
+    int _01_mySqrt_x(int n){
+    	int64_t res=n;
+    	while(res*res > n){
+    		res = (res + n/res) / 2;
     	}
     	return res;
     }
@@ -64,10 +64,10 @@ private:
 };
 
 
-int main(void){
-	Solution sol;
-	int x;
-	while(cin>>x){
-		cout<<"The square root of "<<x<<" is "<<sol._mySqrt_x(x)<<endl;
-	}
-}
+// int main(void){
+// 	Solution sol;
+// 	int x;
+// 	while(cin>>x){
+// 		cout<<"The square root of "<<x<<" is "<<sol._mySqrt_x(x)<<endl;
+// 	}
+// }

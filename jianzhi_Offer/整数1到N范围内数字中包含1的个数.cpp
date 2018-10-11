@@ -5,8 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-    int NumberOf1Between1AndN_Solution(int n)
-    {
+    int NumberOf1Between1AndN_Solution(int n){
   		if(n==0)
   			return 0;
   		string strN = to_string(n);
