@@ -5,7 +5,6 @@ using namespace std;
 
 class Solution {
 public:
-
 	// binary search
     int mySqrt(int x) {
     	if(1 == x)
