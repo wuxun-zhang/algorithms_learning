@@ -1,4 +1,4 @@
 # algorithms_learning
 
-# implemented by C++ language
+# implemented by C++/Python language
 
