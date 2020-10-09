@@ -53,7 +53,7 @@ public:
     // Time complexity: O(log10N)
     // Space complexity: O(1)
     bool isPalindrome_v3(int x) {
-      // special case 1: negative number must not palidrome number
+      // special case 1: negative number must not be palidrome number
       // special case 2: the last digit is 0, only x=0 is palidrome number,
       // otherwise not
       if (x < 0 || (x % 10 == 0 && x != 0))

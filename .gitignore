@@ -10,6 +10,7 @@ DerivedData/
 
 *.[oa]
 *.exe
+test
 
 ## Various settings
 *.pbxuser
